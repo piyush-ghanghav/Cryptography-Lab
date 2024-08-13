@@ -50,13 +50,13 @@ int main() {
     CaesarCipher obj;
 
 
-    string text = "HELLO";
-    int key = 3;
+    string text ;
+    int key ;
 
-    // cout << "Enter the text: ";
-    // getline(cin, text);
-    // cout << "Enter the key: ";
-    // cin >> key;
+    cout << "Enter the text: ";
+    getline(cin, text);
+    cout << "Enter the key: ";
+    cin >> key;
 
     string encryptedText = obj.Encrypt(text, key);
     cout << "\nEncrypted Text: " << encryptedText << endl;
